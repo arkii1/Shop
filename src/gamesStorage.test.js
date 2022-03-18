@@ -1,4 +1,9 @@
-import { getHomeGame, getAllGames, getTags } from "./gamesStorage"
+import {
+  getHomeGame,
+  getAllGames,
+  getTags,
+  getGameFromId,
+} from "./gamesStorage"
 
 describe("getHomeGame", () => {
   it("Should return Lego Star Wars", () => {
@@ -53,5 +58,12 @@ describe("getTags", () => {
       const value = actualTags.filter((e) => e.value === tag)
       expect(value.title).toBe(tag.title)
     })
+  })
+})
+
+describe("getGameFrom Id", () => {
+  it("returns expected game", () => {
+    const gameToTest = getHomeGame()
+    expect(getGameFromId(gameToTest.key).title).toBe(gameToTest.title)
   })
 })
