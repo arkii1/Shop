@@ -2,7 +2,7 @@ import {
   getHomeGame,
   getAllGames,
   getTags,
-  getGameFromId,
+  getGameFromTitle,
 } from "./gamesStorage"
 
 describe("getHomeGame", () => {
@@ -61,9 +61,9 @@ describe("getTags", () => {
   })
 })
 
-describe("getGameFrom Id", () => {
+describe("getGameFromTitle", () => {
   it("returns expected game", () => {
     const gameToTest = getHomeGame()
-    expect(getGameFromId(gameToTest.key).title).toBe(gameToTest.title)
+    expect(getGameFromTitle(gameToTest.title).title).toBe(gameToTest.title)
   })
 })

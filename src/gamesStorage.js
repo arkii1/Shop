@@ -102,14 +102,13 @@ const getTags = () => {
   return tagArray
 }
 
-const getGameFromId = (id) => {
+const getGameFromTitle = (title) => {
   try {
-    const retGame = games.filter((game) => game.key === id)
-    // for some reason returns an array of length 1
+    const retGame = games.filter((game) => game.title === title)
     return retGame[0]
   } catch (err) {
     throw new Error(err)
   }
 }
 
-export { getHomeGame, getAllGames, getTags, getGameFromId }
+export { getHomeGame, getAllGames, getTags, getGameFromTitle }
