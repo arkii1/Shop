@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10vh 0;
+    padding: 0 10vw;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    position: relative;
+  }
+  
+  .navbar > * {
+    color: #e5e5e5;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .navbar > *:hover {
+    transform: scale(1.5);
+  }
+  

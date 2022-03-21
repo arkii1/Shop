@@ -1,0 +1,83 @@
+
+.item-page {
+    display: flex;
+    gap: 2%;
+    margin: 0 3vw;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+
+} 
+  
+.item-page-lhs {
+    width: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+    color: #E5E5E5;
+    align-items: center;
+    text-align: center;
+}
+  
+.item-page-lhs > * {
+    width: 80%;
+    margin: 0;
+}
+
+.item-page-lhs-tags {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+  
+.item-page-rhs {
+    width: 51%;
+    height: auto;
+    flex: 1 0 auto;
+}
+  
+.item-page-rhs > img {
+    width: 100%;
+}
+  
+.item-page-basket {
+    width: 25%;
+} 
+  
+.item-page-basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+  
+.item-page-basket > * {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 03px;
+    font-size: 18px;
+}
+
+.item-page-basket > h3 {
+    color: #e5e5e5;
+    border: solid 0.75mm #e5e5e5;
+    padding: 4px;
+}
+  
+.item-page-basket > button {
+    background-color: #E5E5E5;
+    color: #053c5e;
+    border: none;
+    outline: none;
+    height: auto;
+    width:auto;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+  
+.item-page-basket > button:hover {
+    background-color: #db222a;
+    color: #E5E5E5;
+}

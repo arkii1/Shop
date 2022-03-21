@@ -1,0 +1,84 @@
+.basket {
+    position: absolute;
+    height: 100vh;
+    width: 20vw;
+    background-color: white;
+    color: #1d3958;
+    z-index: 10;
+    left: 100vw;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    top: 0;
+    padding-top: 10vh;
+    padding-left: 1vw;
+    margin: 0;
+}
+
+.basket.active {
+    left: 80vw;
+}
+
+.basket-x {
+    position: absolute;
+    right: 3vw;
+    top: 1vh;
+    color: #1d3958;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.basket-x:hover {
+    transform: scale(1.5)
+}
+
+.basket-checkout {
+    background-color: #1d3958;
+    color: #e5e5e5;
+    border: none;
+    outline: none;
+    height: auto;
+    width:min-content;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: 0.2s;
+    text-align: left;
+}
+
+.basket-checkout:hover {
+    background-color: #db222a;
+    color: #e5e5e5;
+}
+
+.basket-item {
+    width: 80%;
+    height: auto;
+}
+
+.basket-item > img {
+    width: 100%;
+}
+
+.basket-item-amount {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.basket-item-amount > button {
+    height: 30px;
+    width: 30px;
+    color: #E5E5E5;
+    background-color: #1d3958;
+    border: none;
+    outline: none;
+}
+
+
+.basket-item-amount > button:hover {
+    background-color: #E5E5E5;
+    color: #1d3958;
+}
