@@ -55,7 +55,7 @@ function Shop({ games, tags }) {
                 onMouseLeave={() => handleOnImageExit(index)}
               >
                 <img src={game.imageUrl} alt={`${game.title}`} />
-                <Link to={`/item/${game.title}`}>
+                <Link to={`/shop/item/${game.title}`}>
                   <button type="button" className={classes[index]}>
                     SHOP NOW
                   </button>

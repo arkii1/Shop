@@ -84,15 +84,15 @@ function App() {
           removeItem={removeItemFromBasket}
         />
         <Routes>
-          <Route path="/" element={<Home homeGame={getHomeGame()} />} />
+          <Route path="/shop" element={<Home homeGame={getHomeGame()} />} />
           <Route
-            path="/shop"
+            path="/shop/shop"
             element={
               <Shop tags={getTags().sort(sortKeys)} games={getAllGames()} />
             }
           />
           <Route
-            path="item/:id"
+            path="/shop/item/:id"
             element={
               <ItemPage
                 handleAddClick={(game) => {

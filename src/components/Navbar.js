@@ -12,10 +12,10 @@ import "../css/Navbar.css"
 function Navbar({ onBasketClick }) {
   return (
     <div className="navbar">
-      <Link to="/">
+      <Link to="/shop">
         <FontAwesomeIcon icon={faHome} />
       </Link>
-      <Link to="/shop">
+      <Link to="/shop/shop">
         <FontAwesomeIcon icon={faShop} />
       </Link>
       <FontAwesomeIcon icon={faMagnifyingGlass} />
