@@ -1,4 +1,7 @@
-This is a React project built as part of The Odin Project. It covers all the core react features such as 
+View here:
+https://arkii1.github.io/shop/item/Monster%20Hunter%20Rise
+
+This is a React project built as part of The Odin Project. It covers all the core react features such as:
 - React components,
 - JSX,
 - States and props,
@@ -7,3 +10,5 @@ This is a React project built as part of The Odin Project. It covers all the cor
 - Hooks,
 - Routers,
 - Testing react.
+
+Note this is still a work in progress and there are still some visual bugs/features not finished.
