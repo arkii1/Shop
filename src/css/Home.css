@@ -27,7 +27,7 @@
 }
 
 .home-link {
-  background-color: E5E5E5;
+  background-color: #E5E5E5;
   color: #053c5e;
   border: none;
   outline: none;
@@ -41,6 +41,6 @@
 }
 
 .home-link:hover{
-  background-color: black;
-  color: white;
+  background-color: #053c5e;
+  color: #E5E5E5;
 }
