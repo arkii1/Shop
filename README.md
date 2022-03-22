@@ -1,5 +1,5 @@
 View here:
-https://arkii1.github.io/shop/item/Monster%20Hunter%20Rise
+https://arkii1.github.io/shop/
 
 This is a React project built as part of The Odin Project. It covers all the core react features such as:
 - React components,
