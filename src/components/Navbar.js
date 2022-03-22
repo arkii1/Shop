@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faMagnifyingGlass,
   faShoppingBasket,
   faHome,
   faShop,
@@ -18,7 +17,6 @@ function Navbar({ onBasketClick }) {
       <Link to="/shop/shop">
         <FontAwesomeIcon icon={faShop} />
       </Link>
-      <FontAwesomeIcon icon={faMagnifyingGlass} />
       <FontAwesomeIcon icon={faShoppingBasket} onClick={onBasketClick} />
     </div>
   )
