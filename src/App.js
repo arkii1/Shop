@@ -41,21 +41,14 @@ function App() {
   }, [basket])
 
   const removeItemFromBasket = (item) => {
-    console.log("working")
     const found = basket.filter((e) => e.title === item.title)
-    console.log(found)
     if (found.length > 0) {
       const newBasket = [...basket]
-      console.log(newBasket)
       const index = newBasket.indexOf(found[0])
-      console.log(index)
       newBasket[index].amount -= 1
-      console.log(newBasket[index])
       if (newBasket[index].amount <= 0) {
-        console.log("at 0")
         newBasket.splice(index, 1)
       }
-      console.log("-----------------------------")
       setBasket(newBasket)
     }
   }
